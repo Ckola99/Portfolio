@@ -21,7 +21,7 @@ export default {
         'mint-accent': '#43D9AD',
         'peach-accent': '#E99287',
         'violet-accent': '#C98BDF',
-        'line-color': '#1E2D3D'
+        'line-color': '#1E2D3D',
       }
     },
   },
