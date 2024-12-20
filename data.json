@@ -5,8 +5,8 @@
 			"github link": "https://github.com/Ckola99/Ecom-site/tree/main/audiophileSite",
 			"live link": "ecom-site-three.vercel.app",
 			"tech": ["React", "HTML", "Tailwind CSS"],
-			"techIcon": "./src/assets/ReactLogo.png",
-			"picture": "./src/assets/audiophileDesktopView.webP",
+			"techIcon": "./public/ReactLogo.png",
+			"picture": "./public/audiophileDesktopView.webP",
 			"description": "A responsive online store frontend built using React, Redux, React Hook Form, and Tailwind CSS. It showcases various audio products, with features like dynamic routing, order form, a shopping cart and a clean, modern interface.",
 			"id": 1
 		},
@@ -15,8 +15,8 @@
 			"github link": "https://github.com/Ckola99/Xmas-cards",
 			"live link": "xmas-cards.vercel.app",
 			"tech": ["React", "HTML", "Tailwind CSS"],
-			"techIcon": "./src/assets/ReactLogo.png",
-			"picture": "./src/assets/xmascards.webP",
+			"techIcon": "./public/ReactLogo.png",
+			"picture": "./public/xmascards.webP",
 			"description": "a web application built with React that allows users to design and customize holiday greeting cards. users can select from pre-designed templates and jokes. It allows users to preview their custom cards in real-time.",
 			"id": 2
 		},
@@ -35,8 +35,8 @@
 			"github link": "https://github.com/Ckola99/Social-proof-section",
 			"live link": "https://interactive-rating-component-zeta-rouge.vercel.app/",
 			"tech": ["Vanilla JS", "HTML", "CSS"],
-			"techIcon": "./src/assets/javascriptLogo.png",
-			"picture": "./src/assets/interactive.webP",
+			"techIcon": "./public/javascriptLogo.png",
+			"picture": "./public/interactive.webP",
 			"description": "The Interactive Rating Component is a solution to a Frontend Mentor challenge. Users can select a rating from 1 to 5, submit it, and see a 'Thank You' message with their selected rating. Built with HTML5, CSS (Flexbox, Grid), and JavaScript, it focuses on DOM manipulation to update the UI dynamically.",
 			"id": 4
 		},
@@ -44,8 +44,8 @@
 			"name": "Simple Shell",
 			"github link": "https://github.com/F1R3BLAZ3/simple_shell",
 			"tech": ["C"],
-			"techIcon": "./src/assets/cLogo.png",
-			"picture": "./src/assets/simpleShell.webP",
+			"techIcon": "/cLogo.png",
+			"picture": "./public/simpleShell.webP",
 			"description": "a custom implementation of a Unix shell that supports both interactive and non-interactive modes. It handles basic built-in commands like exit and env, executes simple commands, and resolves commands using the PATH environment variable. ",
 			"id": 5
 		},
@@ -53,8 +53,8 @@
 			"name": "Monty Interpreter",
 			"github link": "https://github.com/F1R3BLAZ3/monty/blob/master/README.md",
 			"tech": ["C"],
-			"techIcon": "./src/assets/cLogo.png",
-			"picture": "./src/assets/monty.webP",
+			"techIcon": "/cLogo.png",
+			"picture": "./public/monty.webP",
 			"description": "The Monty Interpreter project is a bytecode interpreter written in C that processes Monty bytecode files (.m). It supports stack and queue operations, allowing manipulation of data through opcodes like push, pall, pint, pop, swap, and arithmetic operations.",
 			"id": 6
 		}
