@@ -22,7 +22,7 @@ const Layout = () => {
   return (
     <div className={`${!isHomepage ? 'bg-navy-blue-primary' : ''} ${isMenuExpanded && 'bg-navy-blue-primary'} min-h-screen rounded-lg border border-line-color m-3 font-fira-code flex flex-col`}>
       <nav className='text-light-gray p-3 border-b border-line-color flex justify-between items-center'>
-        <h1> christopher-kola</h1> <button onClick={toggleMenu}><img className='w-[18px] h-4' src={ isMenuExpanded ? close : hamburger} alt="menu hamburger" /></button>
+        <h1> christopher-kola</h1> <button onClick={toggleMenu} className='md:hidden'><img className='w-[18px] h-4' src={ isMenuExpanded ? close : hamburger} alt="menu hamburger" /></button>
       </nav>
       {isMenuExpanded ? (
         <div className=" text-white flex flex-col flex-1 justify-between">
