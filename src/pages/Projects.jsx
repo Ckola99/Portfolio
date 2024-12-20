@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import chevron from '../assets/chevron.png';
 import chevronDown from '../assets/chevron-down.png';
 import check from '../assets/Check.png';
-import data from '../../data.json';
+import data from '../data.json';
 import reactIcon from '../assets/reactLogo.png'
 import htmlIcon from '../assets/html5Logo.png'
 import cssIcon from '../assets/cssLogo.png'
