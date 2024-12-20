@@ -53,7 +53,7 @@
 			"name": "Monty Interpreter",
 			"github link": "https://github.com/F1R3BLAZ3/monty/blob/master/README.md",
 			"tech": ["C"],
-			"techIcon":"./src/assets/cLogo.png",
+			"techIcon": "./src/assets/cLogo.png",
 			"picture": "./src/assets/monty.webP",
 			"description": "The Monty Interpreter project is a bytecode interpreter written in C that processes Monty bytecode files (.m). It supports stack and queue operations, allowing manipulation of data through opcodes like push, pall, pint, pop, swap, and arithmetic operations.",
 			"id": 6
