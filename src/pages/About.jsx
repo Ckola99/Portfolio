@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import chevron from '../assets/chevron.png'
 import chevronDown from '../assets/chevron-down.png'
 import markdownFile from '../assets/markdownFile.png'
-import close from '../assets/close.png'
 import closeIcon from '../assets/close-icon.png'
 import GithubSnippet from '../components/GithubSnippet'
 

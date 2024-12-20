@@ -5,6 +5,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { formatDistanceToNow } from 'date-fns';
 import commentsIcon from '../assets/comments-icon.png'
 
+
 const GithubSnippet = ({ owner, repo, filePath, startLine, endLine, toggleDetails }) => {
 
   const [code, setCode] = useState('');

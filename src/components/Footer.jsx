@@ -1,7 +1,7 @@
 import React from 'react'
 import linkedin from '../assets/Linkedin.png'
 import twitter from '../assets/twitter.png'
-import github from '../assets/Github.png'
+import github from '../assets/Github.webp'
 const Footer = () => {
   return (
 	  <div className="border-t border-line-color flex justify-between items-center">
