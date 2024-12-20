@@ -12,7 +12,7 @@ const Home = () => {
       </div>
       <div className=" flex flex-col gap-3 text-[14px]">
         <p className='text-light-gray'> &#47;&#47; find my profile on Github:</p>
-        <p className='text-white'> <span className='text-blue'>const</span> <a href='https://github.com/Ckola99' target='_blank'><span className='text-mint-accent'>githubLink</span> = <span className='text-orange-accent hover:underline hover:cursor-pointer'>&Prime;https://github.com/example/url&Prime;</span></a></p>
+        <p className='text-white'> <span className='text-blue'>const</span> <a href='https://github.com/Ckola99' target='_blank'><span className='text-mint-accent'>githubLink</span> = <span className='text-orange-accent hover:underline hover:cursor-pointer'>&Prime;https://github.com/Ckola99&Prime;</span></a></p>
       </div>
   </div>
   )
