@@ -4,7 +4,7 @@ const Home = () => {
   return (
 	<div className='px-5 flex justify-between flex-col py-20'>
       <div className=" relative">
-        <h1 className='text-white'>Hi all. I am <span className='text-6xl block'>Chris Kola</span></h1>
+        <h1 className='text-white'>Hi all. I am <span className='text-5xl block'>Christopher Kola</span></h1>
         <p className='text-mint-accent'> &gt; Front-end developer</p>
         <p className='text-mint-accent'> &gt; Johannesburg, ZA</p>
         <div className=" absolute h-28 w-28 bg-mint-accent blur-[80px] top-5 left-0"></div>
