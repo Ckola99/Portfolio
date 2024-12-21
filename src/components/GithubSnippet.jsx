@@ -4,15 +4,18 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { formatDistanceToNow } from 'date-fns';
 import commentsIcon from '../assets/comments-icon.png'
+import closeIcon from '../assets/close-icon.png'
 
 
-const GithubSnippet = ({ owner, repo, filePath, startLine, endLine, toggleDetails }) => {
+
+const GithubSnippet = ({ owner, repo, filePath, startLine, endLine }) => {
 
   const [code, setCode] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [profile, setProfile] = useState(null);
   const [fileAge, setFileAge] = useState('');
+  const [details, setDetails] = useState(false);
 
   const token = import.meta.env.VITE_GITHUB_TOKEN;
 
@@ -35,7 +38,7 @@ const GithubSnippet = ({ owner, repo, filePath, startLine, endLine, toggleDetail
 
 
   useEffect(() => {
-    const fetchCode = async() => {
+    const fetchCode = async () => {
       try {
         setLoading(true);
         const response = await axios.get(`https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`,
@@ -77,7 +80,7 @@ const GithubSnippet = ({ owner, repo, filePath, startLine, endLine, toggleDetail
     <div className="text-white rounded-lg mb-5">
       {profile && (
         <div className="flex items-center mb-4 justify-between">
-         <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2">
             <img
               src={profile.avatar_url}
               alt="Profile"
@@ -87,15 +90,19 @@ const GithubSnippet = ({ owner, repo, filePath, startLine, endLine, toggleDetail
               {fileAge && <p className="text-gray-400 text-xs"> {fileAge}</p>}
             </div>
           </div>
-          <button onClick={toggleDetails} className="flex group hover:underline gap-1 items-center cursor-pointer">
-            <img src={commentsIcon} alt="comments icon" className='hover:cursor-pointer'/>
+          <button onClick={() => setDetails(!details)} className="flex group hover:underline gap-1 items-center cursor-pointer">
+            <img src={commentsIcon} alt="comments icon" className='hover:cursor-pointer' />
             details
           </button>
-         </div>
+        </div>
       )}
       <SyntaxHighlighter language="javascript" style={vscDarkPlus} customStyle={{ background: '#011221', fontSize: '0.9rem' }} className="border rounded-xl border-line-color">
         {code}
       </SyntaxHighlighter>
+      {details && (<article className='border-t border-line-color p-3 relative mt-5'>
+        <p className='text-[14px] text-light-gray'>My work here was 5 months ago. It was for the project called Find Your Hat Game. This project involved implementing a terminal-based game using JavaScript, where players navigate through a randomly generated field to find a hidden hat while avoiding holes. </p>
+        <button onClick={() => setDetails(false)}><img src={closeIcon} alt="close button" className='absolute top-2 right-0 w-4 h-4 hover:cursor-pointer' /></button>
+      </article>)}
     </div>
   );
 }

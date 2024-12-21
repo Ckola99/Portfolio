@@ -16,12 +16,12 @@ const Home = () => {
         <p className='text-white'> <span className='text-blue'>const</span> <a href='https://github.com/Ckola99' target='_blank'><span className='text-mint-accent'>githubLink</span> = <span className='text-orange-accent hover:underline hover:cursor-pointer'>&Prime;https://github.com/Ckola99&Prime;</span></a></p>
       </div>
       {/* Embed Snake Game */}
-      <div className="row-span-2">
+      <div className="md:row-span-2 hidden md:grid">
         <iframe
           src="https://snake-js-blond.vercel.app/"
           title="Snake Game"
           className="border-none w-full h-full"
-          style={{ aspectRatio: '16 / 9' }}  
+          style={{ aspectRatio: '16 / 9' }}
         ></iframe>
       </div>
   </div>

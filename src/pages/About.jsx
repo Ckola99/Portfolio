@@ -2,14 +2,12 @@ import React, { useState } from 'react'
 import chevron from '../assets/chevron.png'
 import chevronDown from '../assets/chevron-down.png'
 import markdownFile from '../assets/markdownFile.png'
-import closeIcon from '../assets/close-icon.png'
 import GithubSnippet from '../components/GithubSnippet'
 
 const About = () => {
 
-  const [openFolder, setOpenFolder] = useState(false);
+  const [openFolder, setOpenFolder] = useState(true);
   const [openFile, setOpenSelectedFile] = useState('bio');
-  const [details, setDetails] = useState(false);
 
   const toggleFolder = () => {
     setOpenFolder(prevState => !prevState);
@@ -79,12 +77,8 @@ const About = () => {
           filePath="main.js"
           startLine={26}
           endLine={39}
-          toggleDetails={() => setDetails(!details)} />
+          />
       </article>
-      {details && (<article className='border-t border-line-color mx-5 p-3 mb-3 relative'>
-        <p className='text-[14px] text-light-gray'>My work here was 5 months ago. It was for the project called Find Your Hat Game. This project involved implementing a terminal-based game using JavaScript, where players navigate through a randomly generated field to find a hidden hat while avoiding holes. </p>
-        <button onClick={() => setDetails(false)}><img src={closeIcon} alt="close button" className='absolute top-2 right-0 w-4 h-4 hover:cursor-pointer' /></button>
-      </article>)}
     </div>
   )
 }
