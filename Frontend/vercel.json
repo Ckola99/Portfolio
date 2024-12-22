@@ -1,8 +1,7 @@
 {
 	"rewrites": [
 		{
-			"source": "/api/(.*)",
-			"destination": "https://portfolio-beryl-eight-48.vercel.app/api/$1"
+			"source": "/api/(.*)"
 		}
 	]
 }
