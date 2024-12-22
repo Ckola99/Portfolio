@@ -5,7 +5,6 @@ const cors = require('cors')
 const middleware = require('./utils/middleware')
 const githubRouter = require('./controllers/github')
 
-
 app.use(cors());
 
 
