@@ -13,7 +13,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Explicitly allow preflight (OPTIONS) requests for this specific endpoint
-app.options('/api/github/fetch-profile', cors(corsOptions));
+app.options('*', cors(corsOptions)); 
 
 app.use(express.static('dist'))
 app.use(express.json())
