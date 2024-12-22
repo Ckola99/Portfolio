@@ -1,3 +1,4 @@
+const config = require('./utils/config')
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -5,15 +6,16 @@ const middleware = require('./utils/middleware')
 const githubRouter = require('./controllers/github')
 
 const corsOptions = {
-	origin: 'https://ckolaportfolio.vercel.app',
+	origin: config.ALLOWED_ORIGINS,
 	methods: ['GET', 'POST', 'OPTIONS'],
 	allowedHeaders: ['Content-Type', 'Authorization'],
-};
+	credentials: true
+}
 
 app.use(cors(corsOptions));
 
 // Explicitly allow preflight (OPTIONS) requests for this specific endpoint
-app.options('*', cors(corsOptions)); 
+app.options('*', cors(corsOptions));
 
 app.use(express.static('dist'))
 app.use(express.json())
