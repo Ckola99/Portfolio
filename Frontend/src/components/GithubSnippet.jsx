@@ -16,7 +16,7 @@ const GithubSnippet = ({ owner, repo, filePath, startLine, endLine }) => {
   const [fileAge, setFileAge] = useState('');
   const [details, setDetails] = useState(false);
 
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+  const API_BASE_URL = import.meta.env.VITE_BASE_URL;
 
   useEffect(() => {
     const fetchProfile = async () => {
