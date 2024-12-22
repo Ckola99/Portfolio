@@ -5,17 +5,9 @@ const cors = require('cors')
 const middleware = require('./utils/middleware')
 const githubRouter = require('./controllers/github')
 
-const corsOptions = {
-	origin: config.ALLOWED_ORIGINS,
-	methods: ['GET', 'POST', 'OPTIONS'],
-	allowedHeaders: ['Content-Type', 'Authorization'],
-	credentials: true
-}
 
-app.use(cors(corsOptions));
+app.use(cors());
 
-// Explicitly allow preflight (OPTIONS) requests for this specific endpoint
-app.options('*', cors(corsOptions));
 
 app.use(express.static('dist'))
 app.use(express.json())

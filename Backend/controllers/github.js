@@ -1,7 +1,7 @@
 const githubRouter = require('express').Router()
 
 githubRouter.post('/fetch-snippet', async (req, res) => {
-	
+
 	const { owner, repo, filePath, startLine, endLine } = req.body;
 
 	try {
