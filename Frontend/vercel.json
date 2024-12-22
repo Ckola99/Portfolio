@@ -6,7 +6,7 @@
 		},
 		{
 			"source": "/api/(.*)",
-			"destination": "https://your-backend-vercel-url/api/$1"
+			"destination": "https://portfolio-beryl-eight-48.vercel.app/api/$1"
 		}
 	]
 }
