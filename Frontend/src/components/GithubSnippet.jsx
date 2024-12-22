@@ -16,12 +16,12 @@ const GithubSnippet = ({ owner, repo, filePath, startLine, endLine }) => {
   const [fileAge, setFileAge] = useState('');
   const [details, setDetails] = useState(false);
 
-  const token = import.meta.env.VITE_GITHUB_TOKEN;
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.post('/api/github/fetch-profile', {
+        const response = await axios.post(`${API_BASE_URL}/api/github/fetch-profile`, {
           owner,
         });
 
@@ -32,14 +32,14 @@ const GithubSnippet = ({ owner, repo, filePath, startLine, endLine }) => {
     };
 
     fetchProfile();
-  }, [owner]);
+  }, [owner, API_BASE_URL]);
 
 
   useEffect(() => {
     const fetchCode = async () => {
       try {
         setLoading(true);
-        const response = await axios.post(`/api/github/fetch-snippet`,
+        const response = await axios.post(`${API_BASE_URL}/api/github/fetch-snippet`,
           {
             owner,
             repo,
@@ -60,7 +60,7 @@ const GithubSnippet = ({ owner, repo, filePath, startLine, endLine }) => {
     };
 
     fetchCode();
-  }, [owner, repo, filePath, endLine, startLine, token]);
+  }, [owner, repo, filePath, endLine, startLine, API_BASE_URL]);
 
   return (
     <div className="text-white rounded-lg mb-5">
