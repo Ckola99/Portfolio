@@ -22,7 +22,14 @@ export default {
         'peach-accent': '#E99287',
         'violet-accent': '#C98BDF',
         'line-color': '#1E2D3D',
-      }
+        gray: {
+          700: '#3b3b3b',
+          800: '#2a2a2a',
+        },
+      },
+      animation: {
+        pulse: 'pulse 1.5s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

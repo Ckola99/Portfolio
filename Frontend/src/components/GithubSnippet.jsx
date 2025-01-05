@@ -5,7 +5,24 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import commentsIcon from '../assets/comments-icon.png'
 import closeIcon from '../assets/close-icon.png'
 
+const SkeletonLoader = () => (
+  <div className="animate-pulse">
+    {/* Profile Section */}
+    <div className="flex items-center mb-4 justify-between">
+      <div className="flex items-center gap-2">
+        <div className="w-9 h-9 bg-gray-700 rounded-full"></div>
+        <div className="flex flex-col">
+          <div className="w-20 h-3 bg-gray-700 rounded-md"></div>
+          <div className="w-16 h-2 bg-gray-700 rounded-md mt-1"></div>
+        </div>
+      </div>
+      <div className="w-12 h-4 bg-gray-700 rounded-md"></div>
+    </div>
 
+    {/* Code Snippet Section */}
+    <div className="h-40 bg-gray-800 rounded-xl"></div>
+  </div>
+);
 
 const GithubSnippet = ({ owner, repo, filePath, startLine, endLine }) => {
 
@@ -61,6 +78,11 @@ const GithubSnippet = ({ owner, repo, filePath, startLine, endLine }) => {
 
     fetchCode();
   }, [owner, repo, filePath, endLine, startLine, API_BASE_URL]);
+
+
+  if (loading) {
+    return <SkeletonLoader />;
+  }
 
   return (
     <div className="text-white rounded-lg mb-5">
