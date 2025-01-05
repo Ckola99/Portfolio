@@ -6,7 +6,7 @@ const middleware = require('./utils/middleware')
 const githubRouter = require('./controllers/github')
 
 app.use(cors({
-	origin: ['https://ckolaportfolio.vercel.app', 'https://localhost:5173'], // Allow only your frontend
+	origin: ['https://ckolaportfolio.vercel.app'], // Allow only your frontend
 	methods: ['GET', 'POST', 'OPTIONS'], // Specify allowed HTTP methods
 	credentials: true, // Include cookies or authorization headers
 }));
