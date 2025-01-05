@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import hamburger from '../assets/hamburger.png'
-import { Outlet, useLocation, Link } from 'react-router-dom'
+import { Outlet, useLocation, Link, NavLink } from 'react-router-dom'
 import Footer from './Footer';
 import close from '../assets/close.png'
 
@@ -21,8 +21,34 @@ const Layout = () => {
 
   return (
     <div className={`${!isHomepage ? 'bg-navy-blue-primary' : ''} ${isMenuExpanded && 'bg-navy-blue-primary'} min-h-screen rounded-lg border border-line-color m-3 font-fira-code flex flex-col`}>
-      <nav className='text-light-gray p-3 border-b border-line-color flex justify-between items-center'>
-        <h1> christopher-kola</h1> <button onClick={toggleMenu} className='md:hidden'><img className='w-[18px] h-4' src={ isMenuExpanded ? close : hamburger} alt="menu hamburger" /></button>
+      <nav className='text-light-gray border-b border-line-color flex justify-between items-center md:justify-normal'>
+        <h1 className='p-3 '> christopher-kola</h1> <button onClick={toggleMenu} className='md:hidden'><img className='w-[18px] h-4' src={isMenuExpanded ? close : hamburger} alt="menu hamburger" /></button>
+        <ul className='flex ml-[100px]'>
+          <li className='border border-line-color py-3 px-5'>
+            <NavLink
+              onClick={closeMenu}
+              to="/"
+              className={({ isActive }) => isActive ? 'text-white border-b border-orange-accent' : 'text-light-gray'}>
+              _hello
+            </NavLink>
+          </li>
+          <li className='border border-line-color py-3 px-5'>
+            <NavLink
+              onClick={closeMenu}
+              to="/about"
+              className={({ isActive }) => isActive ? 'text-white border-b border-orange-accent' : 'text-light-gray'}>
+              _about-me
+            </NavLink>
+          </li>
+          <li className='border border-line-color py-3 px-5'>
+            <NavLink
+              onClick={closeMenu}
+              to="/projects"
+              className={({ isActive }) => isActive ? 'text-white bg-gray-700' : 'text-light-gray'}>
+              _projects
+            </NavLink>
+          </li>
+        </ul>
       </nav>
       {isMenuExpanded ? (
         <div className=" text-white flex flex-col flex-1 justify-between">

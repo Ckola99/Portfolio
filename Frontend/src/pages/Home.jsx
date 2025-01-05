@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-	<div className='px-5 flex justify-between flex-col py-20 md:grid md:grid-cols-2 md:w-full md:p-[200px]'>
+	<div className='px-5 flex justify-between flex-col py-20 md:grid md:grid-cols-2 md:w-full md:p-[270px]'>
       <div className=" relative">
         <h1 className='text-white'>Hi all. I am <span className='text-5xl block'>Christopher Kola</span></h1>
         <p className='text-mint-accent'> &gt; Front-end developer</p>
