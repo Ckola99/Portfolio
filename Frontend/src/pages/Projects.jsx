@@ -112,7 +112,9 @@ const Projects = () => {
 							<div className="border border-line-color rounded-xl overflow-hidden relative ">
 								<img src={project.picture} alt="" className='' />
 								<div className=" flex flex-col gap-2 p-5">
-									<p className='text-[14px]'>{project.description}</p>
+									<p className='text-[14px]'>{project.description}
+										<a href={project['github link']} target="_blank" rel="noopener noreferrer" className='pl-2 hover:underline hover:text-white'>Read more..</a>
+									</p>
 									<div className="flex gap-2">
 										{project['live link'] && (<a href={project['live link']} target="_blank" rel="noopener noreferrer">
 											<button className='cta-default text-[14px] p-2 rounded-lg h-10'>view-live</button>
