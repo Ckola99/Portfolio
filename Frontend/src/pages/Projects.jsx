@@ -104,7 +104,7 @@ const Projects = () => {
 				)}
 			</div>
 			<div className="mt-5 p-5 md:p-0 md:mt-0 md:border-l md:border-line-color md:w-full">
-				<div className="md:flex md:gap-3 md:border md:border-line-color md:p-[2.5px] md:w-fit md:items-center"><h2 className="text-white mb-3 md:mb-0 md:ml-2"><span className='md:hidden'>&#47;&#47; projects </span><span className='text-light-gray'><span className='hidden'>/</span> {filtered ? filtered : "all"}</span> </h2> <button onClick={() => setSelectedTechnologies([])} className='hidden md:flex'><img src={closeIcon} alt="reset filter" /></button></div>
+				<div className="md:flex md:gap-3 md:border md:border-line-color md:p-[2.5px] md:w-fit md:items-center"><h2 className="text-white mb-3 md:mb-0 md:ml-2"><span className='md:hidden'>&#47;&#47; projects </span><span className='text-light-gray'><span className='md:hidden'>/</span> {filtered ? filtered : "all"}</span> </h2> <button onClick={() => setSelectedTechnologies([])} className='hidden md:flex'><img src={closeIcon} alt="reset filter" /></button></div>
 				<ul className="text-white flex flex-col gap-3 md:border-t md:border-line-color md:grid md:grid-cols-3 md:p-5 md:w-full">
 					{filteredProjects.map((project, index) => (
 						<li key={project.id} className="mb-2 text-light-gray flex flex-col gap-3 md:max-w-[280px]">
