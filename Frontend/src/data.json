@@ -3,31 +3,31 @@
 		{
 			"name": "Audiophile Ecom-site",
 			"github link": "https://github.com/Ckola99/Ecom-site/tree/main/audiophileSite",
-			"live link": "ecom-site-three.vercel.app",
+			"live link": "https://ecom-site-five.vercel.app/",
 			"tech": ["React", "HTML", "Tailwind CSS"],
 			"techIcon": "/reactLogo.png",
 			"picture": "/audiophileDesktopView.webp",
-			"description": "A responsive online store frontend built using React, Redux, React Hook Form, and Tailwind CSS. It showcases various audio products, with features like dynamic routing, order form, a shopping cart and a clean, modern interface.",
+			"description": "A responsive online ecommerce store frontend.",
 			"id": 1
 		},
 		{
 			"name": "Xmas-Cards",
 			"github link": "https://github.com/Ckola99/Xmas-cards",
-			"live link": "xmas-cards.vercel.app",
+			"live link": "https://xmas-cards.vercel.app/",
 			"tech": ["React", "HTML", "Tailwind CSS"],
 			"techIcon": "/reactLogo.png",
 			"picture": "/xmascards.webp",
-			"description": "a web application built with React that allows users to design and customize holiday greeting cards. users can select from pre-designed templates and jokes. It allows users to preview their custom cards in real-time.",
+			"description": "A web application built with React that allows users to design and customize holiday greeting cards.",
 			"id": 2
 		},
 		{
 			"name": "AI enhanced Kanban Task Management App",
 			"github link": "https://github.com/Ckola99/Kanban-webapp/tree/main/kanban-frontend",
-			"live link": "kanban-webapp.vercel.app",
+			"live link": "https://kanban-webapp.vercel.app/",
 			"tech": ["React", "HTML", "Tailwind CSS"],
 			"techIcon": "/reactLogo.png",
 			"picture": "/screenshot.webp",
-			"description": "a project management tool built with React and Redux for state management. It allows users to create, organize, and track tasks through a drag-and-drop interface, mimicking a kanban board. It's a practical tool for organizing work and visualizing progress in a project.",
+			"description": "A project management tool (kanban task board) built with React and Redux for state management.",
 			"id": 3
 		},
 		{
@@ -37,7 +37,7 @@
 			"tech": ["Vanilla JS", "HTML", "CSS"],
 			"techIcon": "/javascriptLogo.png",
 			"picture": "/interactive.webp",
-			"description": "The Interactive Rating Component is a solution to a Frontend Mentor challenge. Users can select a rating from 1 to 5, submit it, and see a 'Thank You' message with their selected rating. Built with HTML5, CSS (Flexbox, Grid), and JavaScript, it focuses on DOM manipulation to update the UI dynamically.",
+			"description": "The Interactive Rating Component is a solution to a Frontend Mentor challenge.",
 			"id": 4
 		},
 		{
@@ -46,7 +46,7 @@
 			"tech": ["C"],
 			"techIcon": "/cLogo.png",
 			"picture": "/simpleShell.webp",
-			"description": "a custom implementation of a Unix shell that supports both interactive and non-interactive modes. It handles basic built-in commands like exit and env, executes simple commands, and resolves commands using the PATH environment variable. ",
+			"description": "a custom implementation of a Unix shell that supports both interactive and non-interactive modes.",
 			"id": 5
 		},
 		{
@@ -55,7 +55,7 @@
 			"tech": ["C"],
 			"techIcon": "/cLogo.png",
 			"picture": "/monty.webp",
-			"description": "The Monty Interpreter project is a bytecode interpreter written in C that processes Monty bytecode files (.m). It supports stack and queue operations, allowing manipulation of data through opcodes like push, pall, pint, pop, swap, and arithmetic operations.",
+			"description": "The Monty Interpreter project is a bytecode interpreter written in C that processes Monty bytecode files (.m).",
 			"id": 6
 		}
 	]

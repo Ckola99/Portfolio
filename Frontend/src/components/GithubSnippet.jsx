@@ -108,7 +108,7 @@ const GithubSnippet = ({ owner, repo, filePath, startLine, endLine }) => {
         {code}
       </SyntaxHighlighter>
       {details && (<article className='border-t border-line-color p-3 relative mt-5'>
-        <p className='text-[14px] text-light-gray'>My work here was {fileAge}. It was for the project called Find Your Hat Game. This project involved implementing a terminal-based game using JavaScript, where players navigate through a randomly generated field to find a hidden hat while avoiding holes. </p>
+        <p className='text-[14px] text-light-gray'>My work here was 5 months ago. It was for the project called Find Your Hat Game. This project involved implementing a terminal-based game using JavaScript, where players navigate through a randomly generated field to find a hidden hat while avoiding holes. </p>
         <button onClick={() => setDetails(false)}><img src={closeIcon} alt="close button" className='absolute top-2 right-0 w-4 h-4 hover:cursor-pointer' /></button>
       </article>)}
     </div>

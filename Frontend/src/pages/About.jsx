@@ -77,7 +77,7 @@ const About = () => {
           filePath="main.js"
           startLine={26}
           endLine={39}
-          />
+        />
       </article>
     </div>
   )
