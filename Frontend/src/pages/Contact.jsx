@@ -186,7 +186,7 @@ const Contact = () => {
           <p className='text-orange-accent'><span className='text-blue'>date:</span> '{currentDate}' </p>
           <p className='text-blue'>&#125;</p>
           <br />
-          <p className='text-blue'>button&#46;addEventListener(<span className='text-orange-accent'>&apos;click&apos;</span>, () => &#123; <br/> form&#46;send(message) <br /> &#125;)</p>
+          <p className='text-blue'>button&#46;addEventListener(<span className='text-orange-accent'>&apos;click&apos;</span>, () =&gt; &#123; <br/> form&#46;send(message) <br /> &#125;)</p>
         </div>
       </div>
     </div>
