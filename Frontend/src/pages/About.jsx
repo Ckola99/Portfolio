@@ -54,6 +54,7 @@ const About = () => {
         </h2>
         <h2 className='hidden md:block md:text-white p-[2.5px] border border-line-color px-4 w-fit'> skills</h2>
         <p className="text-light-gray md:border-t md:border-line-color md:p-4">
+          <span className='hidden md:block'>// Skills</span>
           <strong>Front-End Development</strong>
           <br />
           Proficient in HTML5, CSS3, and JavaScript (ES6+). Skilled in modern frameworks and
